@@ -59,8 +59,8 @@ yarn deploy  (to compile, deploy, and publish your contracts to the frontend)
 
 #### 🥅 Goals
 
-- [ ] Track the solidity code to find out how the DiceGame contract is generating random numbers.
-- [ ] Is it possible to predict the random number for any given roll?
+- [] Track the solidity code to find out how the DiceGame contract is generating random numbers.
+- [] Is it possible to predict the random number for any given roll?
 
 ---
 
@@ -80,9 +80,9 @@ Next add a `riggedRoll()` function. This function should predict the randomness 
 
 #### ⚔️ Side Quest
 
-- [ ] Add a statement to require `address(this).balance >= .002 ether` in your riggedRoll function.  This will help prevent calling the rollTheDice() function without enough value.
-- [ ] Uncomment the code in `App.jsx` to show a riggedRoll button and contract balance on the main UI tab.  Now you can test your function without switching tabs.
-- [ ] Does your riggedRoll function only call rollTheDice() when it's going to be a winning roll?  What happens when it does call rollTheDice()?  
+- [] Add a statement to require `address(this).balance >= .002 ether` in your riggedRoll function.  This will help prevent calling the rollTheDice() function without enough value.
+- [] Uncomment the code in `App.jsx` to show a riggedRoll button and contract balance on the main UI tab.  Now you can test your function without switching tabs.
+- [] Does your riggedRoll function only call rollTheDice() when it's going to be a winning roll?  What happens when it does call rollTheDice()?  
 
 
 ---
@@ -95,12 +95,12 @@ You have beaten the game, but where is your money?  Since the RiggedRoll contrac
 
 #### 🥅 Goals
 
-- [ ] Can you send value from the riggedRoll contract to your front end address?
-- [ ] Is anyone able to call the withdraw function?  What would be the downside to that?
+- [] Can you send value from the riggedRoll contract to your front end address?
+- [] Is anyone able to call the withdraw function?  What would be the downside to that?
 
 #### ⚔️ Side Quest
 
-- [ ] Lock the withdraw function so it can only be called by the owner.
+- [] Lock the withdraw function so it can only be called by the owner.
 
 > ⚠️ But wait, I am not the owner!  You will want to set your front end address as the owner in `01_deploy_riggedRoll.js`.  This will allow your front end address to call the withdraw function.
 
